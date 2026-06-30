@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TINA 中文逆襲 90 分鐘免費應試講座 ｜ 清言中文</title>
+<meta name="description" content="DSE 中文 Straight 5** 狀元 Tina 老師親授，90 分鐘免費應試講座。卷一邏輯定位法、卷二立意陷阱拆解、溫習清單大公開。出席即送《2027 中文科精華應試天書》。" />
+<meta property="og:title" content="TINA 中文逆襲 90 分鐘免費應試講座" />
+<meta property="og:description" content="中文不是靠感覺。一套清晰、有效、真正適合 DSE 的逆襲方法。出席即送應試天書。" />
+<meta property="og:image" content="assets/logo.png" />
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --green-900:#3d5230;
+    --green-800:#52703f;
+    --green-700:#6b8f54;
+    --green-600:#8fb567;
+    --green-500:#a8c97f;
+    --green-300:#c8dca5;
+    --green-100:#e8f1d8;
+    --green-50:#f4f8ec;
+    --cream:#fbfdf6;
+    --ink:#2b3324;
+    --muted:#6a7560;
+    --gold:#c79a3e;
+    --shadow:0 18px 50px -20px rgba(61,82,48,.35);
+    --radius:22px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.serif{font-family:"Noto Serif TC","Noto Sans TC",serif}
+  a{color:inherit;text-decoration:none}
+  .wrap{width:min(1120px,92vw);margin-inline:auto}
+  section{position:relative}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(251,253,246,.85);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(143,181,103,.22);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+  .brand img{height:46px;width:46px;object-fit:contain}
+  .brand span{font-family:"Noto Serif TC",serif;font-size:1.15rem;color:var(--green-800);letter-spacing:.04em}
+  .nav-links{display:flex;gap:30px;font-size:.95rem;font-weight:500}
+  .nav-links a{color:var(--muted);transition:color .2s;position:relative}
+  .nav-links a:hover{color:var(--green-700)}
+  .nav-cta{
+    background:linear-gradient(135deg,var(--green-600),var(--green-700));
+    color:#fff;padding:10px 22px;border-radius:999px;font-weight:700;font-size:.9rem;
+    box-shadow:0 8px 20px -8px rgba(107,143,84,.6);transition:transform .2s,box-shadow .2s;
+  }
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px -8px rgba(107,143,84,.7)}
+  @media(max-width:820px){.nav-links{display:none}}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:
+      radial-gradient(1200px 600px at 85% -10%,rgba(168,201,127,.30),transparent 60%),
+      radial-gradient(900px 500px at -10% 30%,rgba(200,220,165,.35),transparent 55%),
+      linear-gradient(180deg,var(--green-50),var(--cream));
+    padding:80px 0 90px;
+    overflow:hidden;
+  }
+  .leaf-bg{position:absolute;inset:0;pointer-events:none;opacity:.06}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#fff;border:1px solid var(--green-300);
+    color:var(--green-800);font-weight:700;font-size:.85rem;
+    padding:8px 16px;border-radius:999px;margin-bottom:24px;box-shadow:var(--shadow)
+  }
+  .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--green-600);box-shadow:0 0 0 4px rgba(143,181,103,.25)}
+  .hero h1{
+    font-size:clamp(2.1rem,4.6vw,3.5rem);line-height:1.25;font-weight:900;color:var(--green-900);
+    letter-spacing:.01em;margin-bottom:22px;
+  }
+  .hero h1 .hl{
+    color:var(--green-700);
+    background:linear-gradient(180deg,transparent 62%,rgba(199,154,62,.30) 62%);
+    padding:0 4px;
+  }
+  .hero p.lead{font-size:1.12rem;color:var(--muted);margin-bottom:18px;max-width:34ch}
+  .hero .tagline{font-family:"Noto Serif TC",serif;font-size:1.25rem;color:var(--green-800);font-weight:600;margin-bottom:30px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:10px;
+    background:linear-gradient(135deg,var(--green-600),var(--green-800));
+    color:#fff;font-weight:900;font-size:1.05rem;
+    padding:16px 34px;border-radius:999px;
+    box-shadow:0 16px 34px -12px rgba(82,112,63,.7);
+    transition:transform .2s,box-shadow .2s;
+  }
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 22px 40px -12px rgba(82,112,63,.8)}
+  .btn-primary .arrow{transition:transform .2s}
+  .btn-primary:hover .arrow{transform:translateX(4px)}
+  .free-pill{font-size:.92rem;color:var(--green-800);font-weight:700}
+  .free-pill b{color:var(--gold)}
+
+  .hero-card{
+    background:#fff;border-radius:var(--radius);padding:34px 30px;box-shadow:var(--shadow);
+    border:1px solid rgba(143,181,103,.25);position:relative;
+  }
+  .hero-card .ribbon{
+    position:absolute;top:-14px;right:24px;background:var(--gold);color:#fff;
+    font-weight:700;font-size:.8rem;padding:6px 16px;border-radius:999px;box-shadow:0 8px 18px -8px rgba(199,154,62,.7)
+  }
+  .hero-card h3{font-size:1.2rem;color:var(--green-900);margin-bottom:6px}
+  .hero-card .sub{font-size:.9rem;color:var(--muted);margin-bottom:20px}
+  .info-row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px dashed rgba(143,181,103,.4)}
+  .info-row:first-of-type{border-top:none}
+  .info-row .ico{font-size:1.1rem;line-height:1.6}
+  .info-row .k{font-weight:700;color:var(--green-800);font-size:.92rem}
+  .info-row .v{font-size:.9rem;color:var(--muted)}
+
+  /* ---------- SECTION TITLES ---------- */
+  .sec{padding:80px 0}
+  .sec-head{text-align:center;margin-bottom:50px}
+  .sec-head .kicker{color:var(--green-600);font-weight:700;letter-spacing:.18em;font-size:.85rem;text-transform:uppercase}
+  .sec-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);color:var(--green-900);font-weight:900;margin-top:8px}
+  .sec-head .deco{width:64px;height:4px;border-radius:99px;background:linear-gradient(90deg,var(--green-500),var(--green-700));margin:16px auto 0}
+
+  /* ---------- INTRO ---------- */
+  .intro-lede{text-align:center;max-width:46ch;margin:0 auto 18px;font-size:1.3rem;font-family:"Noto Serif TC",serif;color:var(--green-900);font-weight:600;line-height:1.7}
+  .intro-sub{text-align:center;max-width:52ch;margin:0 auto 50px;color:var(--muted);font-size:1.05rem}
+
+  .learn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .learn-card{
+    background:#fff;border-radius:18px;padding:28px;border:1px solid rgba(143,181,103,.22);
+    box-shadow:0 10px 30px -22px rgba(61,82,48,.5);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden;
+  }
+  .learn-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,var(--green-500),var(--green-700))}
+  .learn-card:hover{transform:translateY(-5px);box-shadow:0 22px 44px -22px rgba(61,82,48,.6)}
+  .learn-card .emoji{font-size:1.9rem;display:block;margin-bottom:12px}
+  .learn-card h3{font-size:1.18rem;color:var(--green-800);margin-bottom:10px}
+  .learn-card p{font-size:.97rem;color:var(--muted)}
+  @media(max-width:760px){.learn-grid{grid-template-columns:1fr}}
+
+  /* ---------- WHY ---------- */
+  .why{background:linear-gradient(180deg,var(--green-50),var(--cream))}
+  .why-box{
+    background:#fff;border-radius:var(--radius);padding:46px;box-shadow:var(--shadow);
+    border:1px solid rgba(143,181,103,.25);max-width:760px;margin:0 auto;text-align:center;
+  }
+  .why-box p{font-size:1.08rem;color:var(--ink);margin-bottom:18px}
+  .why-box p.big{font-family:"Noto Serif TC",serif;font-size:1.25rem;color:var(--green-800);font-weight:600}
+  .why-box .accent{color:var(--green-700);font-weight:700}
+
+  /* ---------- GIFT ---------- */
+  .gift{background:linear-gradient(135deg,var(--green-700),var(--green-900));color:#fff;border-radius:28px;padding:50px;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+  .gift::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.06);top:-120px;right:-80px}
+  .gift .tag{display:inline-block;background:var(--gold);padding:6px 18px;border-radius:999px;font-weight:700;font-size:.85rem;margin-bottom:18px}
+  .gift h3{font-size:clamp(1.4rem,3vw,2rem);margin-bottom:10px}
+  .gift .book{font-family:"Noto Serif TC",serif;font-size:1.15rem;color:var(--green-100);margin-bottom:14px}
+  .gift p{color:rgba(255,255,255,.85);max-width:48ch;margin:0 auto 26px}
+
+  /* ---------- CLASSES ---------- */
+  .class-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .class-card{
+    background:#fff;border-radius:20px;padding:30px 26px;border:1px solid rgba(143,181,103,.25);
+    box-shadow:0 12px 32px -24px rgba(61,82,48,.55);text-align:center;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column
+  }
+  .class-card:hover{transform:translateY(-6px);box-shadow:0 26px 48px -24px rgba(61,82,48,.65);border-color:var(--green-500)}
+  .class-card .num{font-family:"Noto Serif TC",serif;font-size:.9rem;color:var(--green-600);font-weight:700;letter-spacing:.05em}
+  .class-card .loc{font-size:1.5rem;font-weight:900;color:var(--green-900);margin:6px 0 4px}
+  .class-card .avail{display:inline-block;background:var(--green-100);color:var(--green-800);font-size:.8rem;font-weight:700;padding:5px 14px;border-radius:999px;margin-bottom:18px}
+  .class-card .date{font-size:1.05rem;font-weight:700;color:var(--ink)}
+  .class-card .time{font-size:.95rem;color:var(--muted);margin-bottom:22px}
+  .class-card .btn-mini{
+    margin-top:auto;display:inline-block;background:linear-gradient(135deg,var(--green-600),var(--green-700));color:#fff;
+    font-weight:700;padding:12px 0;border-radius:12px;transition:filter .2s
+  }
+  .class-card .btn-mini:hover{filter:brightness(1.08)}
+  @media(max-width:760px){.class-grid{grid-template-columns:1fr}}
+
+  /* venues */
+  .venues{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .venue{background:#fff;border:1px solid rgba(143,181,103,.22);border-radius:16px;padding:22px}
+  .venue h4{color:var(--green-800);font-size:1.05rem;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+  .venue p{font-size:.9rem;color:var(--muted)}
+  @media(max-width:760px){.venues{grid-template-columns:1fr}}
+
+  /* ---------- TUTOR ---------- */
+  .tutor{background:linear-gradient(180deg,var(--cream),var(--green-50))}
+  .tutor-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+  .tutor-photo{
+    background:linear-gradient(135deg,var(--green-100),var(--green-300));border-radius:28px;
+    aspect-ratio:1;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);position:relative;overflow:hidden
+  }
+  .tutor-photo img{width:78%;height:78%;object-fit:contain}
+  .tutor-photo .badge{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);background:#fff;color:var(--green-800);font-weight:900;padding:10px 22px;border-radius:999px;box-shadow:var(--shadow);font-size:.95rem;white-space:nowrap}
+  .tutor-info .name{font-family:"Noto Serif TC",serif;font-size:2.2rem;font-weight:900;color:var(--green-900)}
+  .tutor-info .school{color:var(--green-700);font-weight:700;margin-bottom:22px;font-size:1.05rem}
+  .tutor-list{list-style:none;display:grid;gap:14px}
+  .tutor-list li{display:flex;gap:12px;align-items:flex-start;font-size:1.02rem}
+  .tutor-list .chk{color:var(--green-600);font-weight:900;flex-shrink:0;margin-top:2px}
+  .tutor-list b{color:var(--green-800)}
+  @media(max-width:760px){.tutor-grid{grid-template-columns:1fr;gap:34px}.tutor-photo{max-width:340px;margin:0 auto}}
+
+  /* ---------- FINAL CTA ---------- */
+  .final{background:linear-gradient(135deg,var(--green-800),var(--green-900));color:#fff;text-align:center;padding:90px 0;position:relative;overflow:hidden}
+  .final::before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:rgba(168,201,127,.12);top:-200px;left:-150px}
+  .final::after{content:"";position:absolute;width:400px;height:400px;border-radius:50%;background:rgba(168,201,127,.10);bottom:-180px;right:-120px}
+  .final .wrap{position:relative;z-index:1}
+  .final h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:16px}
+  .final p{font-size:1.1rem;color:rgba(255,255,255,.85);max-width:46ch;margin:0 auto 32px}
+  .btn-light{
+    display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--green-800);
+    font-weight:900;font-size:1.1rem;padding:18px 42px;border-radius:999px;
+    box-shadow:0 18px 40px -14px rgba(0,0,0,.4);transition:transform .2s
+  }
+  .btn-light:hover{transform:translateY(-3px)}
+  .final .note{margin-top:18px;font-size:.9rem;color:rgba(255,255,255,.7)}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--green-900);color:rgba(255,255,255,.8);padding:40px 0;text-align:center;font-size:.9rem}
+  footer .brand{justify-content:center;margin-bottom:12px}
+  footer .brand span{color:#fff}
+  footer img{filter:brightness(0) invert(1);opacity:.95}
+
+  /* ---------- STICKY MOBILE CTA ---------- */
+  .sticky-cta{
+    position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;
+    padding:12px 16px;background:rgba(251,253,246,.95);backdrop-filter:blur(10px);
+    border-top:1px solid rgba(143,181,103,.3);box-shadow:0 -8px 24px -16px rgba(0,0,0,.3)
+  }
+  .sticky-cta a{display:block;text-align:center;background:linear-gradient(135deg,var(--green-600),var(--green-800));color:#fff;font-weight:900;padding:14px;border-radius:14px}
+  @media(max-width:820px){.sticky-cta{display:block} body{padding-bottom:74px}}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="清言中文 Logo" />
+      <span>清言中文</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#intro">課程介紹</a>
+      <a href="#classes">上課班次</a>
+      <a href="#tutor">關於導師</a>
+      <a href="#gift">限定好物</a>
+    </nav>
+    <a class="nav-cta" href="https://lumosfreetalk2027.paperform.co/" target="_blank" rel="noopener">免費報名 →</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <span class="eyebrow"><span class="dot"></span>DSE 中文｜免費應試講座</span>
+      <h1>覺得中文好玄妙，<br>付出努力卻<span class="hl">總是考不好</span>？</h1>
+      <p class="lead">中文不是靠感覺，更不是天才的專利。</p>
+      <p class="tagline">你需要的，是一套真正適合 DSE 的逆襲方法。</p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="https://lumosfreetalk2027.paperform.co/" target="_blank" rel="noopener">立即免費報名 <span class="arrow">→</span></a>
+        <span class="free-pill">出席即送 <b>《2027 中文科精華應試天書》</b></span>
+      </div>
+    </div>
+
+    <div class="hero-card reveal in">
+      <span class="ribbon">90 分鐘・免費</span>
+      <h3>《TINA 中文逆襲講座》</h3>
+      <p class="sub">由中文 Straight 5** 狀元 Tina 親授</p>
+      <div class="info-row"><span class="ico">🗓️</span><div><div class="k">日期</div><div class="v">7 月上旬至中旬</div></div></div>
+      <div class="info-row"><span class="ico">👥</span><div><div class="k">對象</div><div class="v">升中五至中六 DSE 中文考生</div></div></div>
+      <div class="info-row"><span class="ico">📍</span><div><div class="k">地點</div><div class="v">沙田 ・ 觀塘 ・ 佐敦（線下講座）</div></div></div>
+      <div class="info-row"><span class="ico">🎁</span><div><div class="k">出席禮物</div><div class="v">《2027 中文科精華應試天書》</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO / 課程介紹 -->
+<section class="sec" id="intro">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">Course Highlights</div>
+      <h2>這 90 分鐘，你會學到</h2>
+      <div class="deco"></div>
+    </div>
+    <p class="intro-lede reveal">🎯 方向正確，你也可以打破中文的天花板。</p>
+    <p class="intro-sub reveal">告別盲目背誦範文、盲目操練歷屆試題。學會真正的拆題與素材轉化技巧，才能以不變應萬變。</p>
+
+    <div class="learn-grid">
+      <div class="learn-card reveal">
+        <span class="emoji">🧭</span>
+        <h3>卷一閱讀｜狀元級「邏輯定位法」</h3>
+        <p>中文不是考語感碰運氣，而是考驗字裡行間的線索。這是一套人人都能看懂、能複製的方法。</p>
+      </div>
+      <div class="learn-card reveal">
+        <span class="emoji">⚡</span>
+        <h3>卷二寫作｜5** 升華扣題與立意陷阱</h3>
+        <p>拒絕平庸！教你在文章開首向閱卷員展現高質量立意，精準避開致命的扣分位。</p>
+      </div>
+      <div class="learn-card reveal">
+        <span class="emoji">🎯</span>
+        <h3>拆題與素材轉化技巧</h3>
+        <p>方向正確，你也可以打破中文的天花板。告別盲目背誦與操練，以不變應萬變。</p>
+      </div>
+      <div class="learn-card reveal">
+        <span class="emoji">💡</span>
+        <h3>解題思維背後的底層邏輯</h3>
+        <p>Tina 老師教的這套思維，不僅救起你的中文科，邏輯推導更通用於其他學科。</p>
+      </div>
+      <div class="learn-card reveal" style="grid-column:1/-1">
+        <span class="emoji">🔥</span>
+        <h3>溫習清單大公開：哪些試卷才值得操練？</h3>
+        <p>拒絕無效努力！直接告訴你哪些盲目操練只是浪費時間，幫你精準投資最珍貴的複習時間。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">Why Join</div>
+      <h2>為什麼你一定要來聽？</h2>
+      <div class="deco"></div>
+    </div>
+    <div class="why-box reveal">
+      <p>很多同學都覺得，中文科的成績好似永遠無法穩定提升 😣</p>
+      <p class="big">但文章可以有<span class="accent">框架</span>去寫，立意可以有<span class="accent">方向</span>推深，閱讀也可以有<span class="accent">步驟</span>去分析。</p>
+      <p>數據告訴我們，只要方向正確，進步是可以預期的。即使你現在中文底子不夠好，只要用對框架與技巧，這一次，輪到你在成績上看到蛻變。✨</p>
+    </div>
+  </div>
+</section>
+
+<!-- GIFT -->
+<section class="sec" id="gift">
+  <div class="wrap">
+    <div class="gift reveal">
+      <span class="tag">🎁 出席即送・課堂限定</span>
+      <h3>應試好物大放送</h3>
+      <p class="book">📖《2027 中文科精華應試天書》（全考點精華整合）</p>
+      <p>歷年應試講座反應都非常熱烈，場場爆滿。名額有限，想在暑假開始走對方向的同學，欲報從速！</p>
+      <a class="btn-light" href="https://lumosfreetalk2027.paperform.co/" target="_blank" rel="noopener">我要報名領取天書 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CLASSES / 上課班次 -->
+<section class="sec why" id="classes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">Schedule</div>
+      <h2>上課班次</h2>
+      <div class="deco"></div>
+      <p style="color:var(--muted);margin-top:14px">可按你的需要選擇合適班次・每場 17:00–18:30</p>
+    </div>
+    <div class="class-grid">
+      <div class="class-card reveal">
+        <div class="num">Live Class 1</div>
+        <div class="loc">佐敦</div>
+        <span class="avail">尚有充足名額</span>
+        <div class="date">8/7（三）星期三</div>
+        <div class="time">17:00 – 18:30</div>
+        <a class="btn-mini" href="https://lumosfreetalk2027.paperform.co/" target="_blank" rel="noopener">選擇此班次</a>
+      </div>
+      <div class="class-card reveal">
+        <div class="num">Live Class 2</div>
+        <div class="loc">沙田</div>
+        <span class="avail">尚有充足名額</span>
+        <div class="date">13/7（一）星期一</div>
+        <div class="time">17:00 – 18:30</div>
+        <a class="btn-mini" href="https://lumosfreetalk2027.paperform.co/" target="_blank" rel="noopener">選擇此班次</a>
+      </div>
+      <div class="class-card reveal">
+        <div class="num">Live Class 3</div>
+        <div class="loc">佐敦</div>
+        <span class="avail">尚有充足名額</span>
+        <div class="date">14/7（二）星期二</div>
+        <div class="time">17:00 – 18:30</div>
+        <a class="btn-mini" href="https://lumosfreetalk2027.paperform.co/" target="_blank" rel="noopener">選擇此班次</a>
+      </div>
+    </div>
+
+    <div class="venues">
+      <div class="venue reveal"><h4>📍 沙田</h4><p>石門安耀街 3 號匯達大廈 2601-05 室</p></div>
+      <div class="venue reveal"><h4>📍 觀塘</h4><p>榮業街 2 號振萬廣場 18 樓 1806 室</p></div>
+      <div class="venue reveal"><h4>📍 佐敦</h4><p>彌敦道 221 號 B-E 恒福商業中心 1 樓 103-106 室（佐敦地鐵站 C1 轉右）</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TUTOR / 關於導師 -->
+<section class="sec tutor" id="tutor">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">Your Tutor</div>
+      <h2>關於導師</h2>
+      <div class="deco"></div>
+    </div>
+    <div class="tutor-grid">
+      <div class="tutor-photo reveal">
+        <img src="assets/logo.png" alt="清言中文 Tina Yeung" />
+        <span class="badge">DSE 中文 Straight 5**</span>
+      </div>
+      <div class="tutor-info reveal">
+        <div class="name">Tina Yeung</div>
+        <div class="school">清言中文 ｜ 香港中文大學中文系畢業 🎓</div>
+        <ul class="tutor-list">
+          <li><span class="chk">✔</span><span>DSE 中文科 <b>Straight 5**</b>，卷二作文 <b>82 分</b>，遠超 5** 門檻。</span></li>
+          <li><span class="chk">✔</span><span>獨家中文解題框架，使用<b>理性思維</b>解讀中文，令中文不再是憑「感覺」。</span></li>
+          <li><span class="chk">✔</span><span>高效取分，不走冤枉路。</span></li>
+          <li><span class="chk">✔</span><span>罕有文科狀元——除中文全卷 5** 外，亦在極難的<b>地理科取得 5**</b>（當年全港僅 104 位地理 5**）。</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <h2 class="reveal">這一次，輪到你看到蛻變 ✨</h2>
+    <p class="reveal">名額有限，場場爆滿。想在暑假開始走對方向的同學，欲報從速！</p>
+    <a class="btn-light reveal" href="https://lumosfreetalk2027.paperform.co/" target="_blank" rel="noopener">立即免費報名講座 →</a>
+    <div class="note reveal">出席即送《2027 中文科精華應試天書》・90 分鐘・完全免費</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="清言中文" style="height:40px;width:40px;object-fit:contain" />
+      <span>清言中文 ｜ Tina Yeung</span>
+    </a>
+    <p>© 2027 清言中文・TINA 中文逆襲免費應試講座</p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta">
+  <a href="https://lumosfreetalk2027.paperform.co/" target="_blank" rel="noopener">立即免費報名 →</a>
+</div>
+
+<script>
+  // scroll reveal
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
